@@ -8,7 +8,7 @@ def results(request):
 
     import requests, json  # Importing Modules
     city = receivedcity # City Name
-    api_key = "acea9fc1c2f727054048dcc964ee5cbe" #API Key received from openweathermap.org
+    api_key = "YOUR_API_KEY_HERE" #API Key received from openweathermap.org
     base_url = "https://api.openweathermap.org/data/2.5/weather?"   # Base URL Address
     url = base_url + "appid=" + api_key + "&q=" + city  # Complete URL address
     response = requests.get(url)    # Return response object
